@@ -49,6 +49,9 @@
         <action
             android:id="@+id/action_ATMOperations_to_withdrawlFragment"
             app:destination="@id/withdrawlFragment" />
+        <action
+            android:id="@+id/action_ATMOperations_to_transferFragment"
+            app:destination="@id/transferFragment" />
     </fragment>
     <fragment
         android:id="@+id/withdrawlFragment"
@@ -56,6 +59,14 @@
         android:label="WithdrawlFragment" >
         <action
             android:id="@+id/action_withdrawlFragment_to_ATMOperations"
+            app:destination="@id/ATMOperations" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="com.example.myapplication.Fragments.TransferFragment"
+        android:label="TransferFragment" >
+        <action
+            android:id="@+id/action_transferFragment_to_ATMOperations"
             app:destination="@id/ATMOperations" />
     </fragment>
 </navigation>

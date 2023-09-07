@@ -41,7 +41,7 @@ class ATMOperations : Fragment() {
             findNavController().navigate(R.id.action_ATMOperations_to_withdrawlFragment)
         })
         transferMoneyButton.setOnClickListener(View.OnClickListener {
-
+            findNavController().navigate(R.id.action_ATMOperations_to_transferFragment)
         })
         checkATMBalanceButton.setOnClickListener(View.OnClickListener {
 

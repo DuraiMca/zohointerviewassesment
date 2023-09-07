@@ -24,6 +24,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_ATMOperations_to_withdrawlFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
@@ -102,6 +107,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="transferFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1133" />
+                            <option name="y" value="-239" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="withdrawlFragment">
                     <value>
                       <LayoutPositions>
@@ -110,6 +127,15 @@
                             <option name="x" value="1224" />
                             <option name="y" value="8" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_withdrawlFragment_to_ATMOperations">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
