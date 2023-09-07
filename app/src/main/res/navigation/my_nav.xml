@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.myapplication.Fragments.HomeFragment"
+        android:label="list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_showCustomerDetails"
+            app:destination="@id/showCustomerDetails" />
+        <action
+            android:id="@+id/action_listFragment_to_ATMOperations"
+            app:destination="@id/ATMOperations" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.myapplication.Fragments.LoadCashFragment"
+        android:label="add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showCustomerDetails"
+        android:name="com.example.myapplication.Fragments.ShowCustomerDetails"
+        android:label="fragment_show_customer_details"
+        tools:layout="@layout/fragment_show_customer_details" >
+        <action
+            android:id="@+id/action_showCustomerDetails_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ATMOperations"
+        android:name="com.example.myapplication.Fragments.ATMOperations"
+        android:label="fragment_a_t_m_operations"
+        tools:layout="@layout/fragment_a_t_m_operations" >
+        <action
+            android:id="@+id/action_ATMOperations_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+</navigation>

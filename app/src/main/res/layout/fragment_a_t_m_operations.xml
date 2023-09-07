@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Check Balance Button -->
+    <Button
+        android:id="@+id/checkBalanceButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Check Balance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:onClick="checkBalance" />
+
+    <!-- Withdraw Money Button -->
+    <Button
+        android:id="@+id/withdrawMoneyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Withdraw Money"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBalanceButton"
+        android:layout_marginTop="16dp"
+        android:onClick="withdrawMoney" />
+
+    <!-- Transfer Money Button -->
+    <Button
+        android:id="@+id/transferMoneyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Transfer Money"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/withdrawMoneyButton"
+        android:layout_marginTop="16dp"
+        android:onClick="transferMoney" />
+
+    <!-- Check ATM Balance Button -->
+    <Button
+        android:id="@+id/checkATMBalanceButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Check ATM Balance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transferMoneyButton"
+        android:layout_marginTop="16dp"
+        android:onClick="checkATMBalance" />
+
+    <!-- Mini Statement Button -->
+    <Button
+        android:id="@+id/miniStatementButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mini Statement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkATMBalanceButton"
+        android:layout_marginTop="16dp"
+        android:onClick="miniStatement" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
