@@ -26,9 +26,6 @@ class ATMRepository(private val ATMDao: ATMDao) {
     suspend fun validateAccount(accountNumber: String, pin: String): BankUserDetails? {
         return ATMDao.validateAccount(accountNumber, pin)
     }
-    suspend fun getBankBalance(accountNumber: String, pin: String): BankUserDetails? {
 
-        return ATMDao.getBalance(accountNumber, pin)
-    }
 
 }

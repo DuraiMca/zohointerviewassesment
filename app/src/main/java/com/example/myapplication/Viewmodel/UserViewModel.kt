@@ -49,9 +49,5 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
             repository.validateAccount(accountNumber,pin)
         }
     }
-    fun getUserBybalance(accountNumber: String, pin: String){
-        viewModelScope.launch ( Dispatchers.IO){
-            repository.getBankBalance(accountNumber,pin)
-        }
-    }
+
 }

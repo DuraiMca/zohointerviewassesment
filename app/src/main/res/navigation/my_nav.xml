@@ -46,5 +46,16 @@
         <action
             android:id="@+id/action_ATMOperations_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_ATMOperations_to_withdrawlFragment"
+            app:destination="@id/withdrawlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/withdrawlFragment"
+        android:name="com.example.myapplication.Fragments.WithdrawlFragment"
+        android:label="WithdrawlFragment" >
+        <action
+            android:id="@+id/action_withdrawlFragment_to_ATMOperations"
+            app:destination="@id/ATMOperations" />
     </fragment>
 </navigation>
